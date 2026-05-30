@@ -17,7 +17,7 @@ export function LoginScreen() {
     setTimeout(() => {
       const ok = login(email, password);
       if (!ok) {
-        setError("Invalid credentials. Try admin@synergycrm.com / admin123");
+        setError("Invalid credentials. Try admin@openttowork.com / admin123");
         addToast("Login failed", "error");
       }
       setLoading(false);
@@ -36,7 +36,7 @@ export function LoginScreen() {
               <path strokeWidth="2" strokeLinecap="round" d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
             </svg>
           </div>
-          <h1 className="text-2xl font-bold text-foreground">SynergyCRM</h1>
+          <h1 className="text-2xl font-bold text-foreground">OpenToWork</h1>
           <p className="text-sm text-muted-foreground mt-1">Recruiting Portal</p>
         </div>
 
@@ -50,7 +50,7 @@ export function LoginScreen() {
                 type="email"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
-                placeholder="admin@synergycrm.com"
+                placeholder="admin@openttowork.com"
                 required
                 className="w-full h-9 px-3 rounded-md border border-input bg-background text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring"
               />
@@ -80,8 +80,8 @@ export function LoginScreen() {
           <div className="mt-4 pt-4 border-t border-border">
             <p className="text-xs text-muted-foreground text-center">Demo credentials:</p>
             <div className="mt-2 space-y-1">
-              <p className="text-xs text-muted-foreground text-center">admin@synergycrm.com / admin123</p>
-              <p className="text-xs text-muted-foreground text-center">recruiter@synergycrm.com / recruiter123</p>
+              <p className="text-xs text-muted-foreground text-center">admin@openttowork.com / admin123</p>
+              <p className="text-xs text-muted-foreground text-center">recruiter@openttowork.com / recruiter123</p>
             </div>
           </div>
         </div>

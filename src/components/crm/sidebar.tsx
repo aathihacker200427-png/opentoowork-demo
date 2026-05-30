@@ -37,7 +37,7 @@ export function Sidebar() {
             <div className="w-7 h-7 rounded-lg bg-sidebar-primary flex items-center justify-center shrink-0">
               <IconCandidates className="w-4 h-4 text-sidebar-primary-foreground" />
             </div>
-            <span className="text-sm font-bold text-sidebar-foreground truncate">SynergyCRM</span>
+            <span className="text-sm font-bold text-sidebar-foreground truncate">OpenToWork</span>
           </div>
         )}
         <button

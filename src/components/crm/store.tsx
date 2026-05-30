@@ -106,9 +106,9 @@ const SEED_TASKS: Task[] = [
 ];
 
 const SEED_TEAM: TeamMember[] = [
-  { id: "tm1", name: "Alice Johnson", email: "alice@synergycrm.com", role: "Admin" },
-  { id: "tm2", name: "Mark Davis", email: "mark@synergycrm.com", role: "Recruiter" },
-  { id: "tm3", name: "Sarah Wilson", email: "sarah@synergycrm.com", role: "Recruiter" },
+  { id: "tm1", name: "Alice Johnson", email: "alice@openttowork.com", role: "Admin" },
+  { id: "tm2", name: "Mark Davis", email: "mark@openttowork.com", role: "Recruiter" },
+  { id: "tm3", name: "Sarah Wilson", email: "sarah@openttowork.com", role: "Recruiter" },
 ];
 
 const SEED_ACTIVITIES: Activity[] = [
@@ -254,12 +254,12 @@ export function CRMProvider({ children }: { children: React.ReactNode }) {
 
   // Auth
   const login = useCallback((email: string, password: string): boolean => {
-    if (email === "admin@synergycrm.com" && password === "admin123") {
+    if (email === "admin@openttowork.com" && password === "admin123") {
       setIsAuthenticated(true);
       setCurrentUser(SEED_TEAM[0]);
       return true;
     }
-    if (email === "recruiter@synergycrm.com" && password === "recruiter123") {
+    if (email === "recruiter@openttowork.com" && password === "recruiter123") {
       setIsAuthenticated(true);
       setCurrentUser(SEED_TEAM[1]);
       return true;

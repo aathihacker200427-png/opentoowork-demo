@@ -3,7 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "SynergyCRM Portal",
+  title: "OpenToWork Portal",
   description: "Recruiting CRM Portal",
 };
 
